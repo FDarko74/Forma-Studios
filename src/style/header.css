@@ -1,0 +1,87 @@
+header {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header img {
+  width: 8%;
+  margin-left: 2rem;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.menu li {
+  list-style: none;
+  transition: transform 0.2s ease;
+}
+
+.menu li a {
+  font: var(--ul-f);
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 769px){
+.menu li:hover {
+  transform: translate(7px, -1px);
+  margin: -4px -6px;
+}
+
+.menu li:hover a {
+  color: white;
+  background: var(--main-color);
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* escondido */
+    height: 40vh;
+    width: 40%;
+    background: white;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease-in-out;
+    border-radius: 0 15px 15px;
+
+    li{
+        margin: auto;
+    }
+  }
+
+  .menu.active {
+    right: 0; /* aparece */
+  }
+
+  header img {
+    width: 20%;
+  }
+}

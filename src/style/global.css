@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #1A1A1A -20%,#6A0D45 50%,#1A1A1A 120%);
+    margin-inline: 2rem;
+}
+
+:root{
+  --main-color: #6A0D45;
+
+  font-family: "Asap", sans-serif;
+  --ul-f: 700 1rem/100% "Asap", sans-serif;
+  
+}
