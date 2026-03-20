@@ -12,9 +12,13 @@
 }
 
 #Home img{
-    width: 50%;
-    margin-left: 2rem;
+    width: 40%;
+    margin: 2rem 3rem;
 }
+
+#Cell{
+        display: none;
+    }
 
 #Home h2{
     font: var(--home-f);
@@ -57,6 +61,13 @@ span{
         background: url(../Assets/bk-cell.png);
         background-size: contain;
         background-position: center;
+    }
+
+    #Pc{
+        display: none;
+    }
+    #Cell{
+        display: block;
     }
     
     #Home img{
