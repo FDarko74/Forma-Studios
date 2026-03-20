@@ -1,6 +1,6 @@
 #Home{
     display: flex;
-    background-image: url(../Assets/Back-img.png);
+    background-image: url(../Assets/Background.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -19,6 +19,13 @@
 #Cell{
         display: none;
     }
+
+#add{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    transform: translateX(-60px);
+}
 
 #Home h2{
     font: var(--home-f);
@@ -58,9 +65,9 @@ span{
 @media (max-width: 768px) {
     
     #Home{
-        background: url(../Assets/bk-cell.png);
         background-size: contain;
         background-position: center;
+        background-repeat: repeat-y;
     }
 
     #Pc{
@@ -68,6 +75,9 @@ span{
     }
     #Cell{
         display: block;
+    }
+    #add{
+        display: none;
     }
     
     #Home img{
