@@ -11,8 +11,8 @@
 
 }
 
-#Home img{
-    width: 40%;
+#Pc{
+    width: 50%;
     margin: 2rem 3rem;
 }
 
@@ -21,9 +21,10 @@
     }
 
 #add{
-    position: absolute;
+    position: fixed;
     right: 0;
-    bottom: 15px;
+    bottom: 0;
+    width: 50%;
     transform: translateX(-60px);
 }
 
