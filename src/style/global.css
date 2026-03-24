@@ -11,9 +11,15 @@ body{
 :root{
   --main-color: #6A0D45;
 
-  font-family: "Asap", sans-serif;
-  --ul-f: 700 1rem/100% "Asap", sans-serif;
+  font-family: "SN Pro", sans-serif;
+  --ul-f: 700 1rem/100% "SN Pro", sans-serif;
   
-  --home-f: 400 2rem/100% "Asap", sans-serif;
-  --home-fcell: 200 1.5rem/100% "Asap", sans-serif;
+  --home-f: 400 2rem/100% "SN Pro", sans-serif;
+  --home-fcell: 200 1.5rem/100% "SN Pro", sans-serif;
+
+  --jobs: bolder 1.2rem/110% "SN Pro", sans-serif;
+  --jobsA: light 1.5rem/100% "SN Pro", sans-serif;
+
+  --cards: bold 1.2rem/100% "SN Pro", sans-serif;
+  --cardsH2: bolder 2.2rem/110% "SN Pro", sans-serif;
 }

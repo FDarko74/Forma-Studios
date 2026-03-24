@@ -1,0 +1,212 @@
+@import url(global.css);
+
+#work {
+  background-color: white;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  border-radius: 30px;
+  flex-wrap: wrap;
+}
+
+#work .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* CARD */
+.jobs {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.514);
+  padding: 2rem;
+  text-align: center;
+  width: 220px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER BONITO */
+.jobs:hover {
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+/* IMAGEM */
+.jobs img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* TÍTULO */
+.jobs h2 {
+  font: var(--jobs);
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+/* BOTÃO */
+.jobs a {
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font: var(--jobsA);
+  transition: all 0.3s ease;
+}
+
+/* HOVER DO BOTÃO */
+.jobs a:hover {
+  background-color: #8a2be2;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+
+  color: #6a0d45;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #6a0d45;
+}
+
+.title::before {
+  margin-right: 1rem;
+}
+
+.title::after {
+  margin-left: 1rem;
+}
+
+.cards {
+  width: 30%;
+  max-width: 500px; /* evita ficar gigante em telas grandes */
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  margin: 0 auto; /* centraliza */
+  transition: all 0.3s ease;
+}
+
+.cards .poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cards h3 {
+  text-transform: uppercase;
+  color: white;
+  font: var(--cards);
+  margin: 1rem 1.5rem 0.2rem;
+}
+
+.cards h2 {
+  text-transform: uppercase;
+  color: white;
+  font: var(--cardsH2);
+  margin: 0 1.5rem 1rem;
+}
+.cards {
+  position: relative;
+}
+
+.cards img:last-child {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  opacity: 0.7;
+}
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+.container {
+  background-color: var(--main-color);
+  transform: translateY(-18px);
+  margin-bottom: -18px;
+}
+
+@media (max-width: 768px) {
+  #work {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  /* TÍTULO */
+  .title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .title::before,
+  .title::after {
+    height: 1px;
+  }
+
+  /* JOBS (cards pequenos) */
+  .jobs {
+    width: 100%;
+    max-width: 280px;
+    padding: 1.5rem;
+  }
+
+  .jobs img {
+    width: 50px;
+  }
+
+  /* CARD GRANDE */
+  .cards {
+    width: clamp(280px, 90%, 500px);
+  }
+
+  .cards h2 {
+    font-size: 1.4rem;
+  }
+
+  .cards h3 {
+    font-size: 0.8rem;
+  }
+
+  /* LOGO NO CARD */
+  .cards img:last-child {
+    width: 60px;
+    bottom: 8px;
+    right: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .jobs {
+    max-width: 100%;
+  }
+
+  .cards h2 {
+    font-size: 1.2rem;
+  }
+}
