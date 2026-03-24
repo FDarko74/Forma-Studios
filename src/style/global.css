@@ -2,18 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    background: linear-gradient(90deg, #1A1A1A -20%,#6A0D45 50%,#1A1A1A 120%);
-    margin-inline: 2rem;
+body {
+  background: linear-gradient(90deg, #1a1a1a -20%, #6a0d45 50%, #1a1a1a 120%);
+  margin-inline: 2rem;
 }
 
-:root{
-  --main-color: #6A0D45;
+:root {
+  --main-color: #6a0d45;
 
   font-family: "SN Pro", sans-serif;
   --ul-f: 700 1rem/100% "SN Pro", sans-serif;
-  
+
   --home-f: 400 2rem/100% "SN Pro", sans-serif;
   --home-fcell: 200 1.5rem/100% "SN Pro", sans-serif;
 
