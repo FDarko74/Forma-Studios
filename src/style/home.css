@@ -1,6 +1,6 @@
 #Home{
     display: flex;
-    background-image: url(../Assets/Background.svg);
+    background-image: url(../Assets/SVG/Background.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
