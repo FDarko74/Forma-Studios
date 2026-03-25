@@ -23,4 +23,12 @@ body {
 
   --cards: bold 1.2rem/100% "SN Pro", sans-serif;
   --cardsH2: bolder 2.2rem/110% "SN Pro", sans-serif;
+  
+  --About-h2: bolder 2rem "SN Pro", sans-serif;
+  --About-p: normal 1.5rem "SN Pro", sans-serif;
+
+  --h3: bolder 1.5rem "SN Pro", sans-serif;
+  --link: bold 1.2rem "SN Pro", sans-serif;
+  --span: bold 1.2rem "SN Pro", sans-serif;
+  --p: normal 1rem "SN Pro", sans-serif;
 }

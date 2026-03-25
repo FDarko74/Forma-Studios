@@ -9,6 +9,13 @@
 .about-header {
   text-align: center;
   margin-bottom: 3rem;
+
+  h2{
+    font: var(--About-h2);
+  }
+  p{
+    font: var(--About-p);
+  }
 }
 
 .team-title {
@@ -31,7 +38,7 @@
   background: rgba(255, 255, 255, 0.2);
   width: 2px;
   height: 100%;
-  transform: translateX(-25px);
+  transform: translateX(-5px);
 }
 
 .member {
@@ -68,11 +75,25 @@
   margin-bottom: 0.5rem;
 }
 
+.member-info{
+  h3{
+    font: var(--h3);
+  }
+  p{
+    font: var(--p);
+  }
+  span{
+    font: var(--span);
+  }
+  a{
+  font: var(--link);
+  }
+}
+
 .member-info img{
   width: 20px;
   height: 20px;
   transform: translateY(5px);
-  margin-left: 10px;
   filter: invert();
 }
 
@@ -93,7 +114,7 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  transform: translateX(-25px);
+  transform: translateX(-5px);
 }
 
 .track {
@@ -111,7 +132,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  font-weight: bold;
   overflow: hidden;
   gap: 1rem;
 }
