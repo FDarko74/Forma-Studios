@@ -99,4 +99,10 @@ span{
         margin: 1rem auto;
     }
 
+    #Home button:hover{
+    width: 80vw;
+    color: white;
+    transform: translate(-4px, -6px);
+}
+
 }

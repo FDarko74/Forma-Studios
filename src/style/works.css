@@ -34,8 +34,17 @@
 /* HOVER BONITO */
 .jobs:hover {
   transform: translateY(-6px) scale(1.02);
-
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  transition: all 0.4 ease;
+  
+  img, h2{
+    display: none;
+  }
+  
+  p{
+    display: block;
+    color: var(--main-color);
+  }
 }
 /* IMAGEM */
 .jobs img {
@@ -52,21 +61,11 @@
 }
 
 /* BOTÃO */
-.jobs a {
+.jobs p {
   display: none;
-  text-decoration: none;
-  background-color: var(--main-color);
-  color: white;
-  padding: 0.6rem 1.2rem;
   border-radius: 20px;
   font: var(--jobsA);
-  transition: all 0.3s ease;
-}
-
-/* HOVER DO BOTÃO */
-.jobs a:hover {
-  background-color: #8a2be2;
-  cursor: pointer;
+  cursor: default;
 }
 
 .title {
